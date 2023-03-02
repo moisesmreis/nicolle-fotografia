@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Header from '@/components/Header'
+import Category from '@/components/Category'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <meta property="og:description" content="Fotógrafa em Porto Seguro" />
      </Head>
      <Header />
+     <Category />
+     <Footer />
     </>
   )
 }

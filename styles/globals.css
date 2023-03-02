@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global styles */
+
+@layer base {
+    body {
+        @apply font-sans px-6 md:px-24 text-[#333333]
+    }
+}
