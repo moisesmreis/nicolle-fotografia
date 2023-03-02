@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Casamento from '@/assets/img/casamento.jpg'
 import Gestante from '@/assets/img/gestante.jpg'
@@ -11,10 +12,12 @@ export class Category extends Component {
     render() {
         return (
             <section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 mb-12">
-                <div className="flex flex-col cursor-pointer gap-2" id="grid-casamento">
-                    <span className="uppercase underline font-light text-sm">Casamento</span>
-                    <Image className="h-96 w-full object-cover rounded-lg shadow-lg" src={Casamento} alt="Casamento" />
-                </div>
+                <Link href="/casamento">
+                    <div className="flex flex-col cursor-pointer gap-2" id="grid-casamento">
+                        <span className="uppercase underline font-light text-sm">Casamento</span>
+                        <Image className="h-96 w-full object-cover rounded-lg shadow-lg" src={Casamento} alt="Casamento" />
+                    </div>
+                </Link>
                 <div className="flex flex-col cursor-pointer gap-2" id="grid-gestante">
                     <span className="uppercase underline font-light text-sm">Gestante</span>
                     <Image className="h-96 w-full object-cover rounded-lg shadow-lg" src={Gestante} alt="Gestante" />
