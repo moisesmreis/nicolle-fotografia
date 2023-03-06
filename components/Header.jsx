@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import ButtonText from './buttonText';
 import ButtonIcon from './buttonIcon';
 import Logo from './Logo';
-import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon, ArrowLeftIcon } from '@radix-ui/react-icons';
 
 export class Header extends Component {
-    
+
     render() {
         return (
-            <header className="grid grid-cols-2 bg-yellow-100 my-12 rounded-full py-2 px-6 gap-6">
+            <header className="grid grid-cols-2 bg-yellow-100 rounded-full my-12 py-2 px-6 gap-6">
                 <div className="flex justify-start content-center items-center flex-row">
-                    <span className="uppercase text-3xl font-black font-serif">Nicolle Della Cruz</span>
+                    <span className="text-2xl uppercase font-black font-serif">Nicolle Della Cruz</span>
                 </div>
                 <div className="flex flex-row content-center justify-center gap-12">
                     <div className="flex justify-center content-center flex-row gap-6">
@@ -31,7 +31,7 @@ export class Header extends Component {
                         </ButtonIcon>
                     </div>
                 </div>
-            </header>            
+            </header>
         )
     }
 }

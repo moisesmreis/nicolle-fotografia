@@ -1,5 +1,5 @@
 export default function ButtonText(props) {
     return (
-        <button className="uppercase tracking-wide font-medium text-sm decoration-1">{props.children}</button>
+        <button className="flex flex-row gap-2 justify-center items-center uppercase tracking-wide font-medium text-sm">{props.children}</button>
     );
 }
