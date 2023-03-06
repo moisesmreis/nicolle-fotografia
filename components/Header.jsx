@@ -5,11 +5,12 @@ import Logo from './Logo';
 import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 
 export class Header extends Component {
+    
     render() {
         return (
-            <header className="grid grid-cols-1 border-b mb-12 py-6 gap-6">
-                <div className="flex justify-center content-center flex-row">
-                    <Logo />
+            <header className="grid grid-cols-2 bg-yellow-100 my-12 rounded-full py-2 px-6 gap-6">
+                <div className="flex justify-start content-center items-center flex-row">
+                    <span className="uppercase text-3xl font-black font-serif">Nicolle Della Cruz</span>
                 </div>
                 <div className="flex flex-row content-center justify-center gap-12">
                     <div className="flex justify-center content-center flex-row gap-6">
@@ -19,12 +20,18 @@ export class Header extends Component {
                         <ButtonText>WhatsApp</ButtonText>
                     </div>
                     <div className="flex justify-center content-center flex-row gap-6">
-                        <ButtonIcon><InstagramLogoIcon className="w-5 h-5" /></ButtonIcon>
-                        <ButtonIcon><LinkedInLogoIcon className="w-5 h-5" /></ButtonIcon>
-                        <ButtonIcon><TwitterLogoIcon className="w-5 h-5" /></ButtonIcon>
+                        <ButtonIcon>
+                            <InstagramLogoIcon className="w-5 h-5" />
+                        </ButtonIcon>
+                        <ButtonIcon>
+                            <LinkedInLogoIcon className="w-5 h-5" />
+                        </ButtonIcon>
+                        <ButtonIcon>
+                            <TwitterLogoIcon className="w-5 h-5" />
+                        </ButtonIcon>
                     </div>
                 </div>
-            </header>
+            </header>            
         )
     }
 }

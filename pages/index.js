@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '@/components/Header'
+import MouseTracker from '@/components/MouseTracker'
 import Category from '@/components/Category'
 import Footer from '@/components/Footer'
 
@@ -15,6 +16,7 @@ export default function Home() {
         <meta property="og:description" content="Fotógrafa em Porto Seguro" />
      </Head>
      <Header />
+     <MouseTracker />
      <Category />
      <Footer />
     </>

@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Archivo'],
+      'sans': ['General Sans'],
       'serif': ['Boska'],
     },
     extend: {},
