@@ -1,5 +1,5 @@
 export default function ButtonText(props) {
     return (
-        <button className="hover:underline justify-center items-center uppercase tracking-wide font-medium text-lg">{props.children}</button>
+        <button className={`justify-center hover:opacity-100 opacity-40 items-center uppercase tracking-wide font-medium text-lg ${props.className}`}>{props.children}</button>
     );
 }

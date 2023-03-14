@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import Casal from '@/assets/img/casal.jpg'
 import Feminino from '@/assets/img/feminino.jpg'
