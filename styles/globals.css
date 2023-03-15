@@ -6,6 +6,6 @@
 
 @layer base {
     body {
-        @apply font-sans px-6 md:px-24 text-[#333333] dark:bg-[#292B2F]
+        @apply font-sans px-6 md:px-24 text-[#333333]
     }
 }
